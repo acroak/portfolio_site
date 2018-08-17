@@ -2,9 +2,11 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="shortcut icon" href="public/logo.png">
     <title>Andrea Croak</title>
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="app.js"></script>
     <link rel="stylesheet" href="main.css">
   </head>
@@ -28,8 +30,8 @@
           <ul>
             <li><a href="#div3">About</a></li>
             <li><a href="#div4">Skills</a></li>
-            <li><a href="#div5">Code</a></li>
-            <li><a href="#div6">Art</a></li>
+            <li><a href="#code">Code</a></li>
+            <li><a href="#art">Art</a></li>
             <li><a href="#div7">Contact</a></li>
           </ul>
         </div>
@@ -52,68 +54,134 @@
           <h3>ABOUT</h3>
           <hr />
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <h4><a href="#">Resume</a></h4>
         </div>
       </div>
 
-      <div class="skills-header" id="skills">
-        <h3>SKILLS</h3>
-      </div>
+
 
       <div class="categories" id="div4">
+        <div class="skills-header" id="skills">
+          <h3>SKILLS</h3>
+        </div>
 
-          <div class="sub4">
-            <h5>Languages</h5>
-            <ul>
-              <li>JavaScript</li>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Ruby/Rails</li>
-            </ul>
-          </div>
+          <div class="columns">
+            <div class="sub4">
+              <img src="public/coding.png" alt="Code Languages Icons">
+              <h5>Languages</h5>
+              <ul>
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Ruby/Rails</li>
+              </ul>
+            </div>
 
-          <div class="sub4" id="about">
-            <h5>Frameworks</h5>
-            <ul>
-              <li>Angular</li>
-              <li>Bootstrap</li>
-              <li>Express</li>
-              <li>React?</li>
-            </ul>
-          </div>
-          <div class="sub4">
-            <h5>Databases</h5>
-            <ul>
-              <li>MongoDB</li>
-            </ul>
-          </div>
-          <div class="sub4">
-            <h5>Other</h5>
-            <ul>
-              <li>Heroku</li>
-              <li>Git/Github</li>
-            </ul>
+            <div class="sub4" id="about">
+              <img src="public/rdf-file.png" alt="Frameworks Icon">
+              <h5>Frameworks</h5>
+              <ul>
+                <li>Angular</li>
+                <li>Bootstrap</li>
+                <li>Express</li>
+                <li>React?</li>
+              </ul>
+            </div>
+            <div class="sub4">
+              <img src="public/server.png" alt="Server Icon">
+              <h5>Databases</h5>
+              <ul>
+                <li>MongoDB</li>
+                <li>SQL</li>
+              </ul>
+            </div>
+            <div class="sub4">
+              <img src="public/binary-code.png" alt="Binary Icon">
+              <h5>Other</h5>
+              <ul>
+                <li>Heroku</li>
+                <li>Git/Github</li>
+                <li>Adobe Creative Suite</li>
+              </ul>
+            </div>
           </div>
       </div>
 
-      <div class="section-title">
+      <div class="section-title" id="code">
         <h3>CODE</h3>
       </div>
       <div class="categories" id="div5">
-
+        <div class="sub5">
+          <img src="https://www.syncron.com/wp-content/uploads/2017/03/img-placeholder.png" alt="">
+          <h4>placeholder title</h4>
+        </div>
+        <div class="sub5">
+          <img src="https://www.syncron.com/wp-content/uploads/2017/03/img-placeholder.png" alt="">
+          <h4>placeholder title</h4>
+        </div>
+        <div class="sub5">
+          <img src="https://www.syncron.com/wp-content/uploads/2017/03/img-placeholder.png" alt="">
+          <h4>placeholder title</h4>
+        </div>
+        <div class="sub5">
+          <img src="https://www.syncron.com/wp-content/uploads/2017/03/img-placeholder.png" alt="">
+          <h4>placeholder title</h4>
+        </div>
       </div>
 
-      <div class="categories" id="div6">
+      <div class="section-title" id='art'>
         <h3>ART</h3>
       </div>
+      <div class="categories" id="div6">
+        <div class="sub5">
+          <img src="https://www.syncron.com/wp-content/uploads/2017/03/img-placeholder.png" alt="">
+          <h4>placeholder title</h4>
+        </div>
+        <div class="sub5">
+          <img src="https://www.syncron.com/wp-content/uploads/2017/03/img-placeholder.png" alt="">
+          <h4>placeholder title</h4>
+        </div>
+        <div class="sub5">
+          <img src="https://www.syncron.com/wp-content/uploads/2017/03/img-placeholder.png" alt="">
+          <h4>placeholder title</h4>
+        </div>
+        <div class="sub5">
+          <img src="https://www.syncron.com/wp-content/uploads/2017/03/img-placeholder.png" alt="">
+          <h4>placeholder title</h4>
+        </div>
+      </div>
 
-      <div class="categories" id="div7">
-        <ul class="contact-info">
-          <li><a href="mailto:acroak@live.com">Email Me:
-          <h4>acroak@live.com</h4></a></li>
-          <li><h4><a href="https://github.com/acroak">GitHub</a></h4></li>
-          <li><h4><a href="https://www.linkedin.com/in/andreacroak/">Linked In</a></h4></li>
-          <li><h4><a href="#">Resume</a></h4></li>
+      <div class="social-nav" id="div7">
+        <ul class="contact-info social-menu">
+          <li class="social-icon">
+            <a href="mailto:acroak@live.com">
+              <img src="public/if_email_mail_envelope_send_message_1011336.png" alt="Email Icon" id="email-icon"/>
+            </a>
+          </li>
+          <li class="social-icon">
+            <a href="https://github.com/acroak" target="_blank">
+              <img src="public/if_github_social_media_logo_1221583.png" alt="GitHub icon" id="github-icon">
+            </a>
+          </li>
+          <li class="social-icon">
+            <a href="https://www.linkedin.com/in/andreacroak/" target="_blank">
+              <img src="public/if_online_social_media_linked_in_734383.png" alt="LinkedIn Icon" id="linkedin-icon">
+            </a>
+          </li>
+          <li class="social-icon">
+            <a href="https://www.instagram.com/arcroak/?hl=en" target="_blank">
+              <img src="public/if_instagram_online_social_media_734394.png" alt="Instagram Icon" id="instagram-icon">
+            </a>
+          </li>
         </ul>
+      </div>
+      <div class="categories" id="img-source">
+        <div class="">
+          <p>Copyright &copy; 2018</p>
+        </div>
+      </div>
+      <div class="categories" id="img-source">
+        <div> Icons made by <a href="https://www.flaticon.com/authors/vitaly-gorbachev" title="Coding">Coding</a> from <a href="https://www.flaticon.com/"     title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"     title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
       </div>
     </div> <!-- CLOSE WRAPPER -->
   </body>

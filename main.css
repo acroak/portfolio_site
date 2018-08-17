@@ -46,7 +46,13 @@ margin: auto;
 width: 100%;
 border-bottom: 1px solid #ddd;
 }
-
+.categories {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  /* padding: 10px; */
+  height: auto;
+}
 .navbar {
 display: flex;
 justify-content: space-between;
@@ -73,96 +79,177 @@ margin-left: 20px;
 font-size: 16px;
 font-weight: bold;
 }
-
+.section-title{
+  text-align: center;
+  font-family: font-family: 'Roboto Condensed', sans-serif;
+  padding: 15px;
+}
 #div2{
   background-image: url(https://1.bp.blogspot.com/-M7YyDAQxpyU/W1YoPTdsmwI/AAAAAAAAJIA/8oMhPsuvepA3QObLG_MiKspCaXKAhH0VwCLcBGAs/s1600/skulls-polly-vadasz-03.jpg);
-  /* background-color: orange; */
-  /* width: 20px;
-  height: 20px; */
   flex-direction: row;
+  height: 400px;
 }
+  .sub2{
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .flex-item {
+      display:flex;
+      align-items: center;
+      width: 350px;
+  }
 
+  .flex-item ul{
+    list-style: none;
+  }
+  .profile-img{
+    border-radius: 100%;
+    max-heigth: 150px;
+    max-width: 150px;
+  }
 #div3{
   background-color: Gainsboro;
+  height: 400px;
   /* width: 20px;
   height: 20px; */
 }
-
+  .skills-header{
+    text-align: center;
+    background-color: LightGray;
+  }
+  .sub3{
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .columns{
+    display: flex;
+    padding: 20px;
+  }
 #div4{
   background-color: LightGray;
+  flex-direction: column;
+  justify-content: center;
+  height: 400px;
   /* width: 20px;
   height: 20px; */
+}
+  .sub4{
+    flex-direction: row;
+    text-align: center;
+    width: 33%;
+    /* border: 2px solid green; */
+    padding: 0px 15px;
+  }
+  .sub4 ul {
+    list-style: none;
+  }
+  .sub4 img {
+    max-width: 25%;
+    max-width: 25%;
+  }
+#code {
+  background-color: #BEBEBE;
+  padding-top: 94px;
 }
 #div5{
   background-color: #BEBEBE;
+  flex-wrap: wrap;
+  align-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 25px;
   /* width: 20px;
   height: 20px; */
+}
+  .sub5{
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    width: 33%;
+    border: 2px solid green;
+    /* padding: 0px 15px; */
+  }
+  .sub5 img{
+    max-width: 75%;
+  }
+#art{
+  background-color: DarkGray;
+  padding-top: 94px;
 }
 #div6{
   background-color: DarkGray;
+  flex-wrap: wrap;
+  align-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 25px;
   /* width: 20px;
   height: 20px; */
 }
-#div7{
+  .sub6{
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    width: 33%;
+    border: 2px solid green;
+    /* padding: 0px 15px; */
+  }
+  .sub6 img{
+    max-width: 75%;
+  }
+#div7, #img-source{
   background-color: #696969;
+  text-align: center;
+  justify-content: center;
+  font-size: 10px;
   /* width: 20px;
   height: 20px; */
-}
-.sub2{
-  max-width: 600px;
-  text-align: center;
-  margin: 0 auto;
-}
-.sub3{
-  max-width: 600px;
-  text-align: center;
-  margin: 0 auto;
-}
-
-.sub4{
-  text-align: center;
-  width: 33%;
-}
-
-.sub4 ul {
-  list-style: none;
-}
-.categories {
-  display: flex;
-  /* justify-content: space-between; */
-  align-items: center;
-  /* padding: 10px; */
-  height: 500px;
-}
-hr{
 
 }
-.welcome{
-  text-align: center;
+#img-source{
+  padding-bottom: 15px;
 }
-.contact-info a{
-  color: white;
-}
-
-.contact-info a:hover{
+#img-source a{
   color: black;
 }
-.skills-header{
-  text-align: center;
-  background-color: LightGray;
+.social-nav {
+display: flex;
+justify-content: center;
+font-family: 'Roboto Condensed', sans-serif;
+/* max-height: 200px; */
 }
 
-.flex-item {
-    display:flex;
-    align-items: center;
-    width: 350px;
+.social-menu {
+display: flex;
+align-items: center;
+font-family: 'Roboto Condensed', sans-serif;
 }
 
-.flex-item ul{
-  list-style: none;
+.social-menu ul {
+display: flex;
+align-items: center;
+list-style: none;
 }
-.profile-img{
-  border-radius: 100%;
-  max-heigth: 150px;
-  max-width: 150px;
+
+.social-menu li {
+padding: 20px;
+/* margin-left: 20px; */
+/* font-size: 16px; */
+font-weight: bold;
+list-style: none;
 }
+
+.social-icon img{
+  max-width: 50%;
+  max-height: 50%;
+}
+.social-logo img {
+  max-width: 25%;
+  max-height: 25%;
+}
+
+  .welcome{
+    text-align: center;
+  }
