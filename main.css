@@ -9,7 +9,7 @@ font-family: 'Helvetica', sans-serif;
 #logo-img{
   max-width: 100px;
   max-height: 100px;
-  margin-left: 20%;
+  margin-left: 5%;
   padding: 5px;
 }
 
@@ -17,6 +17,8 @@ font-family: 'Helvetica', sans-serif;
   font-family: 'Roboto Condensed', sans-serif;
   color: rgb(105,105,105);
   align-items: left;
+  display: inline;
+  x: 20%;
 }
 
 a {
@@ -148,4 +150,19 @@ hr{
 .skills-header{
   text-align: center;
   background-color: LightGray;
+}
+
+.flex-item {
+    display:flex;
+    align-items: center;
+    width: 350px;
+}
+
+.flex-item ul{
+  list-style: none;
+}
+.profile-img{
+  border-radius: 100%;
+  max-heigth: 150px;
+  max-width: 150px;
 }
