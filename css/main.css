@@ -20,6 +20,9 @@ font-family: 'Helvetica', sans-serif;
   display: inline;
   x: 20%;
 }
+#logo-header:hover{
+  color: black;
+}
 
 a {
 color: rgba(130,130,130,.57);
@@ -45,6 +48,7 @@ left: 0;
 margin: auto;
 width: 100%;
 border-bottom: 1px solid #ddd;
+z-index: 3;
 }
 .categories {
   display: flex;
@@ -84,33 +88,40 @@ font-weight: bold;
   font-family: font-family: 'Roboto Condensed', sans-serif;
   padding: 15px;
 }
+.flex-item {
+    display:flex;
+    align-items: center;
+    width: 350px;
+}
+.flex-item ul{
+  list-style: none;
+}
 #div2{
   background-image: url(https://1.bp.blogspot.com/-M7YyDAQxpyU/W1YoPTdsmwI/AAAAAAAAJIA/8oMhPsuvepA3QObLG_MiKspCaXKAhH0VwCLcBGAs/s1600/skulls-polly-vadasz-03.jpg);
   flex-direction: row;
   height: 400px;
 }
+  .welcome{
+    text-align: center;
+  }
   .sub2{
     max-width: 600px;
     text-align: center;
     margin: 0 auto;
   }
-  .flex-item {
-      display:flex;
-      align-items: center;
-      width: 350px;
-  }
-
-  .flex-item ul{
-    list-style: none;
-  }
   .profile-img{
     border-radius: 100%;
-    max-heigth: 150px;
-    max-width: 150px;
+    max-heigth: 45%;
+    max-width: 45%;
+  }
+  .about-descript{
+    padding-top: 10px;
   }
 #div3{
   background-color: Gainsboro;
-  height: 400px;
+  height: auto;
+  padding-top: 75px;
+  padding-bottom: 75px;
   /* width: 20px;
   height: 20px; */
 }
@@ -132,14 +143,11 @@ font-weight: bold;
   flex-direction: column;
   justify-content: center;
   height: 400px;
-  /* width: 20px;
-  height: 20px; */
 }
   .sub4{
     flex-direction: row;
     text-align: center;
     width: 33%;
-    /* border: 2px solid green; */
     padding: 0px 15px;
   }
   .sub4 ul {
@@ -149,6 +157,9 @@ font-weight: bold;
     max-width: 25%;
     max-width: 25%;
   }
+  .sub4 h4 {
+    padding: 5px;
+  }
 #code {
   background-color: #BEBEBE;
   padding-top: 94px;
@@ -156,23 +167,31 @@ font-weight: bold;
 #div5{
   background-color: #BEBEBE;
   flex-wrap: wrap;
-  align-content: space-between;
+  justify-content: center;
   padding-left: 15px;
   padding-right: 15px;
-  padding-bottom: 25px;
-  /* width: 20px;
-  height: 20px; */
 }
-  .sub5{
+  .sub5, .sub6{
     flex-direction: row;
     text-align: center;
-    justify-content: space-between;
     width: 33%;
-    border: 2px solid green;
-    /* padding: 0px 15px; */
+    padding-bottom: 25px;
   }
-  .sub5 img{
-    max-width: 75%;
+  .sub5 img {
+    /* height: 80%; */
+  }
+  .sub5 a, .sub6 a{
+    color: #696969;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-variant: small-caps;
+    font-size: 25px;
+  }
+
+  .sub5 a:hover, .sub6 h5:hover{
+    color: white;
+  }
+  .sub6 img {
+    max-width: 50%;
   }
 #art{
   background-color: DarkGray;
@@ -182,19 +201,16 @@ font-weight: bold;
   background-color: DarkGray;
   flex-wrap: wrap;
   align-content: space-between;
+  justify-content: center;
   padding-left: 15px;
   padding-right: 15px;
   padding-bottom: 25px;
-  /* width: 20px;
-  height: 20px; */
 }
   .sub6{
     flex-direction: row;
     text-align: center;
     justify-content: space-between;
     width: 33%;
-    border: 2px solid green;
-    /* padding: 0px 15px; */
   }
   .sub6 img{
     max-width: 75%;
@@ -204,52 +220,111 @@ font-weight: bold;
   text-align: center;
   justify-content: center;
   font-size: 10px;
-  /* width: 20px;
-  height: 20px; */
+}
+    #img-source{
+      padding-bottom: 15px;
+    }
+    #img-source a{
+      color: black;
+    }
+    .social-nav {
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    .social-menu {
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    .social-menu ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    }
+
+    .social-menu li {
+    padding: 20px;
+    font-weight: bold;
+    list-style: none;
+    }
+
+    .social-icon img{
+      max-width: 50%;
+      max-height: 50%;
+    }
+    .modal {
+    	background-color: rgba(0,0,0,0.4);
+    	position: fixed;
+    	top: 0;
+    	left: 0;
+    	height: 100%;
+    	width: 100%;
+    	z-index: 1;
+    	overflow: auto;
+    }
+    #art-modal-1{
+      display: none;
+    }
+    #art-modal-2{
+      display: none;
+    }
+    #art-modal-3{
+      display: none;
+    }
+
+    #modal-textbox {
+    	background-color: white;
+    	height: auto;
+    	width: auto;
+      max-width: 70%;
+    	border-radius: 2px;
+    	margin: 150px auto;
+    	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+
+    }
+    #modal-textbox h1{
+      text-align: center;
+    }
+    /* ======= CAROUSEL SECTION ======== */
+    .container{
+      display: flex;
+      justify-content: center;
+    }
+.carousel-container {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+}
+.carousel1-images, .carousel2-images, .carousel3-images {
+  width: 80%;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  border: 2px solid #696969;
+}
+.carousel1-images img, .carousel2-images img, .carousel3-images img {
+  width: 100%;
+  border-radius: 10px;
+  display: none;
+}
+.carousel-images1 img:first-of-type, .carousel-images2 img:first-of-type, .carousel-images3 img:first-of-type {
+  display: block;
+}
+.carousel-button {
+  align-self: center;
+  background: #696969;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  text-align: center;
 
 }
-#img-source{
-  padding-bottom: 15px;
+.carousel-button:hover {
+  cursor: pointer;
+  background: DarkGray;
+  color: white;
 }
-#img-source a{
-  color: black;
-}
-.social-nav {
-display: flex;
-justify-content: center;
-font-family: 'Roboto Condensed', sans-serif;
-/* max-height: 200px; */
-}
-
-.social-menu {
-display: flex;
-align-items: center;
-font-family: 'Roboto Condensed', sans-serif;
-}
-
-.social-menu ul {
-display: flex;
-align-items: center;
-list-style: none;
-}
-
-.social-menu li {
-padding: 20px;
-/* margin-left: 20px; */
-/* font-size: 16px; */
-font-weight: bold;
-list-style: none;
-}
-
-.social-icon img{
-  max-width: 50%;
-  max-height: 50%;
-}
-.social-logo img {
-  max-width: 25%;
-  max-height: 25%;
-}
-
-  .welcome{
-    text-align: center;
-  }
