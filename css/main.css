@@ -97,7 +97,9 @@ font-weight: bold;
   list-style: none;
 }
 #div2{
-  background-image: url(https://1.bp.blogspot.com/-M7YyDAQxpyU/W1YoPTdsmwI/AAAAAAAAJIA/8oMhPsuvepA3QObLG_MiKspCaXKAhH0VwCLcBGAs/s1600/skulls-polly-vadasz-03.jpg);
+  /* background-image: url(https://1.bp.blogspot.com/-M7YyDAQxpyU/W1YoPTdsmwI/AAAAAAAAJIA/8oMhPsuvepA3QObLG_MiKspCaXKAhH0VwCLcBGAs/s1600/skulls-polly-vadasz-03.jpg); */
+  background-image: url(../images/patternsm.jpg);
+
   flex-direction: row;
   height: 400px;
 }
@@ -109,6 +111,12 @@ font-weight: bold;
     text-align: center;
     margin: 0 auto;
   }
+  .sub2 h1{
+    font-size: 3em;
+    text-shadow: 4px 4px 10px #91B59B;
+
+  }
+
   .profile-img{
     border-radius: 100%;
     max-heigth: 45%;
@@ -258,6 +266,7 @@ font-weight: bold;
     .modal {
     	background-color: rgba(0,0,0,0.4);
     	position: fixed;
+
     	top: 0;
     	left: 0;
     	height: 100%;

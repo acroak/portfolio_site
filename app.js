@@ -88,10 +88,12 @@ $('a[href*="#"]')
   const openModal1 = () => {
     console.log('open modal');
     $modal1.css('display', 'block');
+    $('.carousel1-images').children().eq(0).css('display', 'block');
   }
 
   const closeModal1 = () => {
     $modal1.css('display', 'none');
+    event.preventDefault();
   }
 
   $openBtn1.on('click', openModal1);
@@ -144,10 +146,12 @@ $('a[href*="#"]')
   const openModal2 = () => {
     console.log('open modal');
     $modal2.css('display', 'block');
+    $('.carousel2-images').children().eq(0).css('display', 'block');
   }
 
   const closeModal2 = () => {
     $modal2.css('display', 'none');
+    event.preventDefault();
   }
 
   $openBtn2.on('click', openModal2);
@@ -200,10 +204,12 @@ $('a[href*="#"]')
   const openModal3 = () => {
     console.log('open modal');
     $modal3.css('display', 'block');
+    $('.carousel3-images').children().eq(0).css('display', 'block');
   }
 
   const closeModal3 = () => {
     $modal3.css('display', 'none');
+    event.preventDefault();
   }
 
   $openBtn3.on('click', openModal3);
